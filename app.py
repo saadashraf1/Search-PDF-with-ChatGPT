@@ -24,7 +24,7 @@ llm = OpenAI(temperature=0.1, verbose=True)
 embeddings = OpenAIEmbeddings()
 
 # Create and load PDF Loader
-loader = PyPDFLoader('bill.pdf')
+loader = PyPDFLoader('sample_pdf_file.pdf')
 # Split pages from pdf 
 pages = loader.load_and_split()
 # Load documents into vector database aka ChromaDB
